@@ -1,7 +1,4 @@
-## Custom Python scripts used in this manuscript
-
-### Requirements
-	pysam
+## Custom Python scripts used in the C. lomamiensis manuscript
 
 ### allele_balance_filter.py
 Masks heterozygous calls with minor allele read support below a specified threshold.
@@ -29,6 +26,7 @@ https://github.com/axeljen/phylogenomics
 
 After cloning this repo, transcripts can be extracted to phylip format using the vcfToMSA.py script, provided that all coding coordinates of the transcript is listed in a text file with four tab-separated columns:
 chrom\tstart\tend\tstrand. 
+	
 	## usage example
 	python3 vcfToMSA.py -v input_vcf.vcf \
 		-R transcript_cds.txt \
